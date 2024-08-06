@@ -147,7 +147,7 @@ ol li::marker {
   padding: 0.75rem 0;
 }
 
-.row span:first-child {
+.row span {
   padding-left: 1.25rem;
 }
 
