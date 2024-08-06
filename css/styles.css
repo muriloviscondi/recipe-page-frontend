@@ -133,12 +133,12 @@ ol li::marker {
 }
 
 .divider {
-  border-bottom: 1px solid var(--stone-600);
+  border-bottom: 1px solid var(--stone-150);
   width: 100%;
 }
 
 .row + .row {
-  border-top: 1px solid var(--stone-600);
+  border-top: 1px solid var(--stone-150);
 }
 
 .row {
