@@ -1,0 +1,146 @@
+:root {
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: var(--stone-100);
+  color: var(--stone-600);
+  flex-direction: column;
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.strong-item {
+  font-weight: 700;
+}
+
+/* TODO verificar se é essa font a do título */
+.title {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.625rem;
+  color: var(--stone-900);
+}
+
+.sub-title {
+  color: var(--brown-800);
+}
+
+.card {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  width: 43rem;
+}
+
+.header-container {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.header-container img {
+  border-radius: 0.75rem;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.tag {
+  background-color: var(--rose-50);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.tag-title {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+ul {
+  margin-left: 0.5rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  content: '•';
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--brown-800);
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+ol li {
+  padding-left: 0.75rem;
+}
+
+ol li::marker {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+.divider {
+  border-bottom: 1px solid var(--stone-900);
+  width: 100%;
+}
+
+@media (max-width: 680px) {
+  .card {
+    margin: 0;
+    width: auto;
+    border-radius: none;
+  }
+
+  .header-container {
+    padding: 0;
+  }
+
+  .header-container img {
+    min-height: 11.25rem;
+  }
+}
