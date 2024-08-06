@@ -66,9 +66,9 @@ h2 {
   background-color: var(--white);
   border-radius: 0.75rem;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-bottom: 3rem;
-  margin-top: 5rem;
+  margin-top: 7rem;
   width: 43rem;
 }
 
